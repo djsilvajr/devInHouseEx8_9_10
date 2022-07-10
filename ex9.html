@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 8</title>
+</head>
+<body style="padding: 10px;">
+
+        <p id="valor">0</p>
+        <input type="button" value="-" onclick="btnSubtrai()">
+        <input type="button" value="+" onclick="btnAdiciona()">
+    
+</body>
+</html>
+
+<script>
+    
+
+    function btnSubtrai(){
+        let contador_container = document.getElementById('valor') 
+        let contador = contador_container.textContent
+
+        contador_container.textContent = parseInt(contador) - 1;
+
+    }
+    function btnAdiciona(){
+        let contador_container = document.getElementById('valor') 
+        let contador = contador_container.textContent
+        
+
+        contador_container.textContent = parseInt(contador) + 1;
+
+    }
+</script>
